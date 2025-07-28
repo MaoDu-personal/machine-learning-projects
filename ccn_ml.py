@@ -51,13 +51,3 @@ def visualize_ccn_data(data):
     plt.legend()
     plt.grid()
     plt.show()
-    
-def main():
-    # Define the file path for CCN data
-    file_path = 'path/to/ccn_data.csv'
-    
-    # Load the CCN data
-    ccn_data = load_ccn_data(file_path)
-    
-    # Visualize the CCN data
-    visualize_ccn_data(ccn_data)
