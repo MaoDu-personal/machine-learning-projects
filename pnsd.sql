@@ -5,3 +5,5 @@
 % the dataset is about the patient with the parkinson's disease
 
 select * from pnsd
+where time between 2022-05-01 and 2022-06-01
+
