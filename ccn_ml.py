@@ -61,3 +61,8 @@ def main():
     
     # Visualize the CCN data
     visualize_ccn_data(ccn_data)
+    
+
+if __name__ == "__main__":
+    main()
+    
