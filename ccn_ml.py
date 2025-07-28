@@ -28,3 +28,26 @@ def load_ccn_data(file_path):
     
     return data
 
+
+# Function to visualize CCN data
+def visualize_ccn_data(data):
+    """
+    Visualize the CCN data using matplotlib.
+    
+    Parameters:
+    data (pd.DataFrame): The DataFrame containing CCN data.
+    """
+    plt.figure(figsize=(10, 6))
+    
+    if 'date' in data.columns:
+        plt.plot(data['date'], data['ccn_count'], label='CCN Count')
+        plt.xlabel('Date')
+    else:
+        plt.plot(data.index, data['ccn_count'], label='CCN Count')
+        plt.xlabel('Index')
+    
+    plt.ylabel('CCN Count')
+    plt.title('CCN Data Visualization')
+    plt.legend()
+    plt.grid()
+    plt.show()
