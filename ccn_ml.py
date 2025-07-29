@@ -1,8 +1,9 @@
 import pandas as pd
 import numpy as np
+import seaborn as sns
 import os
 import matplotlib.pyplot as plt
-from sklearn import preprocessing, model_selection
+from sklearn import preprocessing
 
 
 def load_ccn_data(file_path):
